@@ -6,6 +6,10 @@ gem 'rails', '4.1.0'
 gem 'rails_12factor', group: :production
 ruby '2.1.2'
 # Use sqlite3 as the database for Active Record
+
+gem 'sqlite3'
+
+
 group :production do
   gem 'pg'
 end
@@ -14,6 +18,7 @@ end
 gem 'uglifier', '>= 1.3.0'
 
 gem 'turbolinks'
+
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
@@ -57,7 +62,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
-  gem 'sqlite3', '1.3.9'
+  # gem 'sqlite3', '1.3.9'
 end
 
 #Dashing related stuff
