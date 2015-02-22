@@ -53,14 +53,13 @@ gem 'formtastic'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-
+gem "sqlite3", :group => :development
 # Use Capistrano for deployment
 group :development do
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
-  gem 'sqlite3', '1.3.9'
 end
 
 #Dashing related stuff
