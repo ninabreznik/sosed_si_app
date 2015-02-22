@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     @user.accepted_terms_of_use = accepted_terms_of_use
     @user.save
     UserMailer.terms_of_use(@user).deliver 
-    redirect_to accepted_terms_confirmation_path
+    redirect_to profile_path
   end
 
   def tracking_id
