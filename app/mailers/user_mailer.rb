@@ -18,7 +18,16 @@ class UserMailer < ActionMailer::Base
     @user = user
     @user_tracking_id = @user.tracking_id 
     @user_tracking_link = leads_new_path(id: @user_tracking_id)
-    mail(to: @user.email, subject: 'Uspešno ste potrdili dogovor o sodelovanju')
+    mail(to: @user.email, subject: 'Uspešno ste potrdili ustvarili afiliacijsko kodo')
+  end
+
+  def new_lead(lead, user)
+    @lead = lead
+    @user = user
+    @user_tracking_id = @user.tracking_id 
+    @user_tracking_link = leads_new_path(id: @user_tracking_id)
+      # if @lead.affiliation_id == user.tracking_id || @lead.tracking_link == @user_tracking_link
+    mail(to: @user.email, subject: 'Nov servis')
   end
 
 end
