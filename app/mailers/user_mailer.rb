@@ -16,7 +16,8 @@ class UserMailer < ActionMailer::Base
 
   def affiliation_code(user)
     @user = user
-    @tracking_link = leads_new_url(id: @tracking_id)
+    @user_tracking_id = @user.tracking_id 
+    @user_tracking_link = leads_new_path(id: @user_tracking_id)
     mail(to: @user.email, subject: 'Uspešno ste potrdili dogovor o sodelovanju')
   end
 
