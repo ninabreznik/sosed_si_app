@@ -11,6 +11,11 @@ class User < ActiveRecord::Base
 
   has_many :leads
 
+  after_create :send_admin_mail
+  def send_admin_mail
+    UserMailer.welcome_email(self).deliver
+  end
+
    # #############################################################################
   # Order between User and Lead
   # #############################################################################

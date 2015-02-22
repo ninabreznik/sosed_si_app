@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Uspešno ste potrdili Dogovor o sodelovanju.</h1>
+    <p>
+      Sedaj lahko pričnemo!
+    </p>
+    <p>
+      Da bi pričeli s pridobivanjem naročil, je treba najprej poskrbeti za promocijo v vaši okolici. Na voljo imate več vrst obvestil za stanovanjske bloke in oglasne deske.<br> <br>
+      Prejeta naročila bomo objavljali na <%= link_to "domači strani", root_url %>. O vsakem novem naročilu vas bomo tudi obvestili preko e-pošte (če je naročilo preko vaše afiliacijske kode, boste o naročilu obveščeni 5min pred ostalimi. </p><br>
+
+    <p>
+      Kako sedaj pričnemo?<br>
+
+      1. Na <%= link_to "Profilu", profile_url %> generirajte najprej svojo afiliacijsko kodo.<br>
+      2. Nato na strani <%= link_to "Promocijski material", promo_url %> izberite enega izmed obvestil in ga natisnite (afiliacijska koda je avtomatično dodana pod telefonske številke na obvestilih).<br>
+      3. Promocijo pa lahko izvajate tudi na spletu, kjer lahko delite svoj afiliacijski link in za vsa naročila, ki jih bomo prejeli prejeli, vam pripada tudi provizija. Več o tem pa <%= link_to "tukaj", price_list_url %><br>
+      4. Ker smo v fazi alfa testiranja, vas lepo prosimo za povratne informacije in dali bomo vse od sebe, da bomo prilagodili aplikacijo v smer, ki vam bo najbolj ustrezala.
+    </p>
+    <p>
+      Lep dan še naprej.
+    </p>
+      <br>
+    <p>Nina Breznik, <br>
+      <%= root_url %></p>
+  </body>
+</html>
