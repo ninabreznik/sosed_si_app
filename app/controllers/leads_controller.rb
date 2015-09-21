@@ -1,5 +1,5 @@
 class LeadsController < ApplicationController
-  
+
   def index
     @leads = Lead.all
     @lead = Lead.find_by_id(params[:id])
@@ -41,7 +41,7 @@ class LeadsController < ApplicationController
       @lead.previous_step
     elsif @lead.last_step?
         check_tracking_link(@lead)
-        @lead.save 
+        @lead.save
     else
       @lead.next_step
     end
@@ -50,13 +50,13 @@ class LeadsController < ApplicationController
       # auto_create_user!(@lead)
       session[:lead_step] = session[:lead_params] = nil
       redirect_to new_lead_confirmation_url
-      # User.all.where(accepted_terms_of_use: true).each do |user|
-      #   UserMailer.new_lead(@lead, user).deliver 
-      # end
-    else 
+      User.all.where(accepted_terms_of_use: true).each do |user|
+        UserMailer.new_lead(@lead, user).deliver
+      end
+    else
       redirect_to leads_new_url
     end
-  end 
+  end
 
 
   def update
@@ -68,13 +68,13 @@ class LeadsController < ApplicationController
 
   def lead_params
     params.require(:lead).permit(
-      :name, 
-      :email, 
-      :description, 
-      :zip, 
-      :phone, 
-      :business_type, 
-      :time, 
+      :name,
+      :email,
+      :description,
+      :zip,
+      :phone,
+      :business_type,
+      :time,
       :location,
       :address,
       :material_supply,
@@ -96,13 +96,13 @@ class LeadsController < ApplicationController
   #     else
   #       pass = SecureRandom.hex[0..7]
   #       user = User.create!(
-  #                email: lead.email, 
-  #                password: pass, 
+  #                email: lead.email,
+  #                password: pass,
   #                password_confirmation: pass
   #              )
   #       lead.user_id = user.id
   #       user.leads << lead
-  #       UserMailer.welcome_email(user, pass).deliver 
+  #       UserMailer.welcome_email(user, pass).deliver
   #     end
   #   end
   #   lead.save

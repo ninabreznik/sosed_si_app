@@ -41,27 +41,13 @@
       width: device-width;
     }
   </style>
-  <!--Start of Zopim Live Chat Script-->
-  <script type="text/javascript">
-  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
-  $.src='//v2.zopim.com/?2630UOyNDT97hcB07HX3Xt4AKW4x9cgB';z.t=+new Date;$.
-  type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
-  </script>
-  <!--End of Zopim Live Chat Script-->
-  <!--Start of SHARE Buttons Script-->
-  <script>
-document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=vertical&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
-</script>
- <!--End of SHARE Buttons Script-->
 </head>
 
 <body>
   <a id="top" name="top"> &nbsp; </a>
-  
+
   <%= render 'layouts/top_menu' %>
-    
+
   <%= yield %>
 
   <%= render 'layouts/bottom_menu' %>
@@ -72,5 +58,3 @@ document.write('<script src="//sharebutton.net/plugin/sharebutton.php?type=verti
 
 </body>
 </html>
-
-
