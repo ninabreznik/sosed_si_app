@@ -73,33 +73,17 @@
         </div>
       </div>
 
-      <div class="lead_box">
-      <div class ="profile_dashboard_title">
-        Promocijski material:
-      </div>
-      <div class="profile_dashboard_body">
-        <div class="profile_dashboard_body_not_signed_in">
-          Pomagajte tudi vi pridobiti nova naročila. Distribuirajte promocijski material v vaši okolici.
-        </div>
-        <div class="profile_dashboard_body_wallet_buttons">
-          <div class="profile_dashboard_body_wallet_button">
-            <%= link_to "Pomocijski material", promo_path %>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="lead_box">
       <div class ="profile_dashboard_title">
         Sosed sosedu:
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_not_signed_in">
-          Deli kontakt stranke, ki je ne utegneš servisirati in si zasluži provizijo.
+          Deli kontakt stranke, ki je ne utegneš servisirati
         </div>
         <div class="profile_dashboard_body_wallet_buttons">
           <div class="profile_dashboard_body_wallet_button">
-            <%= link_to "Oddaj storitev", delim_path(id: @user_tracking_id) %>
+            <%= link_to "Oddaj storitev", narocilo_path %>
           </div>
         </div>
       </div>
@@ -180,33 +164,10 @@
         <div class ="profile_dashboard_title">
           AFILIACIJA
         </div>
-        <div class="profile_dashboard_body">
-          <% if @user_tracking_id == nil %>
-            <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
-                <%= u.label :"Vpišite ime podjetja"  %>
-                <%= u.text_field :name %>
-                <%= u.submit "Generirajte kodo" %>
-            <% end %>
-          <% else %>
-            <div class="profile_dashboard_body_wallet_buttons">
-              <div class="profile_dashboard_body_username">
-                Vaša afiliacijska koda, ki jo vnesete v obrazec za naročilo storitve
-               </div>
-              <div class="profile_dashboard_body_wallet_button">
-                <%= @user_tracking_id %>
-              </div>
-            </div><br><br><br>
-            <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
-              <%= u.label :"Vnesite besedo"  %>
-              <%= u.text_field :name %>
-              <%= u.submit "Spremenite kodo" %>
-            <% end %>
-          <% end %>
-        </div>
       </div>
       <div class="lead_box">
         <div class ="profile_dashboard_title">
-          Število naročil, prispelih preko vaše afiliacijske kode:
+          Afiliacija trenutno ni na voljo.
         </div>
         <div class="profile_dashboard_body">
           <div class="profile_dashboard_body_wallet_amount">
