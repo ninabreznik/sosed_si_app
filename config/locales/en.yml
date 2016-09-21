@@ -1,12 +1,12 @@
 en:
 
 # ############################################################################################
-# Page 0 - APPLICATION 
+# Page 0 - APPLICATION
 # ############################################################################################
 
 #Login and Logout
   application:
-    top-menu:  
+    top-menu:
       login: "Login"
       signup: "Sign up"
     bottom-menu:
@@ -21,7 +21,7 @@ en:
 # ############################################################################################
 
 #Signup
-  users-signup: 
+  users-signup:
     signup: "Sign up"
     email: "Email"
     password: "Password"
@@ -37,13 +37,13 @@ en:
 
 #Edit
   users-edit: #   "#{I18n.t'users-login.remember-me'}"
-    
+
     edit-fields:
       email: "Email"
       password: "Password"
       password-confirmation: "Password confirmation"
       current.password: "Current password"
-  
+
     edit-title: "Edit profile"
     update-button: "Update"
     password-tip: "leave blank if you don't want to change it"
@@ -56,24 +56,24 @@ en:
     back: "Back"
 
   devise:
-    sessions: 
+    sessions:
       user:
         signed_in: "Succesfully signed in."
         signed_out: "Successfuly signed out."
     registrations:
       user:
         signed_up: "Succesfully signed up."
-    failure:  
-      unauthenticated: 'You need to sign in or sign up before continuing.'  
-      unconfirmed: 'You have to confirm your account before continuing.'  
-      locked: 'Your account is locked.'  
-      invalid: 'OH NOES! ERROR IN TEH EMAIL!'  
-      invalid_token: 'Invalid authentication token.'  
-      timeout: 'Your session expired, please sign in again to continue.'  
-      inactive: 'Your account was not activated yet.'  
+    failure:
+      unauthenticated: 'You need to sign in or sign up before continuing.'
+      unconfirmed: 'You have to confirm your account before continuing.'
+      locked: 'Your account is locked.'
+      invalid: 'OH NOES! ERROR IN TEH EMAIL!'
+      invalid_token: 'Invalid authentication token.'
+      timeout: 'Your session expired, please sign in again to continue.'
+      inactive: 'Your account was not activated yet.'
 
 
-#<%= I18n.t'users-links.login' %> 
+#<%= I18n.t'users-links.login' %>
 #"#{I18n.t'users-links.login'}"
 #Links
   users-links:
@@ -95,7 +95,7 @@ en:
 
 # Lead body
   leadsindex-lead:
-    location: "Region" 
+    location: "Region"
     zip: "Zip"
     time: "When?"
     description: "Description"
@@ -111,7 +111,7 @@ en:
 
 
 # ############################################################################################
-# Page 2 - LEADS/SHOW 
+# Page 2 - LEADS/SHOW
 # ############################################################################################
 
 # Lead body
@@ -126,7 +126,7 @@ en:
     price: "Price: 10 €"
 
 # Links
-  leadsshow-links: 
+  leadsshow-links:
     buy: "Buy"
 
 
@@ -137,7 +137,7 @@ en:
 
 # Lead body
   ordersshow-lead:
-    location: "Region" 
+    location: "Region"
     zip: "Zip"
     time: "When?"
     description: "Description"
@@ -158,8 +158,8 @@ en:
 # Payment buttons
   ordersshow-payment-buttons:
     choose-payment-text: "Choose type of payment"
-    paypal-checkout: "Paypal" 
-    wallet: "Wallet" 
+    paypal-checkout: "Paypal"
+    wallet: "Wallet"
     bank-transfer: "Bank transfer"
 
 
@@ -223,7 +223,7 @@ en:
     signed_in_but_no_orders: "Here you will find all the leads, for which you didn't finish payment yet."
     signed_in_but_no_orders: "Here you will find all the your bought leads - address book of your customers."
 # Buttons
-  ordersindex-buttons: 
+  ordersindex-buttons:
     buy: "Buy"
     remove-from-reserved: "Remove from reserved"
     save: "Save"
@@ -246,12 +246,12 @@ en:
   staticpages-info:
     thanks: "Thank you for using Sosed.biz app"
     email: "Email"
-    email_text: "info@sosed.si" 
+    email_text: "info@sosed.si"
 
   #COMPANY INFO
-    company_info: "Company info" 
+    company_info: "Company info"
     company: "Company"
-    mojsosed: "Moj sosed d.o.o." 
+    mojsosed: "www.sosed.si"
     address: "Address"
     sosed_address: "Radehova 39"
     city: "City"
@@ -305,7 +305,7 @@ en:
     offer_account: "Account number"
     offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
     offer_company: "Company"
-    offer_company_mojsosed: "Moj sosed d.o.o." 
+    offer_company_mojsosed: "www.sosed.si"
     offer_tax_id: "TAX ID"
     offer_tax_id_mojsosed: "49595105"
     offer_address: "Address"
@@ -314,7 +314,7 @@ en:
     offer_mojsosed_city: "2230 Lenart"
     offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
     lead:
-      location: "Region" 
+      location: "Region"
       zip: "Zip"
       time: "When?"
       description: "Description"
@@ -342,7 +342,7 @@ en:
     offer_account: "Account number"
     offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
     offer_company: "Company"
-    offer_company_mojsosed: "Moj sosed d.o.o." 
+    offer_company_mojsosed: "www.sosed.si"
     offer_tax_id: "TAX ID"
     offer_tax_id_mojsosed: "49595105"
     offer_address: "Address"
@@ -1007,4 +1007,3 @@ en:
   time:
     formats:
       long: "%d/%m/%Y %H:%M"
-
