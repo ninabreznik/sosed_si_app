@@ -95,11 +95,11 @@
       </div>
       <div class="profile_dashboard_body">
         <div class="profile_dashboard_body_not_signed_in">
-          Deli kontakt stranke, ki je ne utegneš servisirati.
+          Deli kontakt stranke, ki je ne utegneš servisirati in si zasluži provizijo.
         </div>
         <div class="profile_dashboard_body_wallet_buttons">
           <div class="profile_dashboard_body_wallet_button">
-            <%= link_to "Oddaj storitev", new_lead_path %>
+            <%= link_to "Oddaj storitev", delim_path(id: @user_tracking_id) %>
           </div>
         </div>
       </div>
@@ -150,7 +150,71 @@
       <% end %>
 
 <!-- ########################## USER SIGNED IN && AFFILIATOR ######################### -->
-    
+    <% elsif current_user.affiliation_agreement == true %>
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          AFILIACIJA
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_wallet_buttons">
+            <% if current_user.affiliation_agreement == true %>
+              <div class="profile_dashboard_body_not_signed_in">
+                <%= link_to "Dogovor o afiliaciji:", affiliation_agreement_path %> Potrjen
+              </div>
+              <div class="profile_dashboard_body_wallet_buttons">
+                <div class="profile_dashboard_body_wallet_button">
+                  <%= link_to "Naročite servis", leads_new_path %>
+                </div>
+              </div>
+          <% else %>
+            <div class="profile_dashboard_body_wallet_buttons">
+              <div class="profile_dashboard_body_wallet_button">
+                <%= link_to "Potrdite dogovor o sodelovanju.", affiliation_agreement_path  %>
+              </div>
+            </div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          AFILIACIJA
+        </div>
+        <div class="profile_dashboard_body">
+          <% if @user_tracking_id == nil %>
+            <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
+                <%= u.label :"Vpišite ime podjetja"  %>
+                <%= u.text_field :name %>
+                <%= u.submit "Generirajte kodo" %>
+            <% end %>
+          <% else %>
+            <div class="profile_dashboard_body_wallet_buttons">
+              <div class="profile_dashboard_body_username">
+                Vaša afiliacijska koda, ki jo vnesete v obrazec za naročilo storitve
+               </div>
+              <div class="profile_dashboard_body_wallet_button">
+                <%= @user_tracking_id %>
+              </div>
+            </div><br><br><br>
+            <%= form_for (@user), url: tracking_id_user_path(@user), method: :post do |u| %>
+              <%= u.label :"Vnesite besedo"  %>
+              <%= u.text_field :name %>
+              <%= u.submit "Spremenite kodo" %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+      <div class="lead_box">
+        <div class ="profile_dashboard_title">
+          Število naročil, prispelih preko vaše afiliacijske kode:
+        </div>
+        <div class="profile_dashboard_body">
+          <div class="profile_dashboard_body_wallet_amount">
+            <%= @all_affiliation_customer_for_certain_user%>
+          </div>
+        </div>
+      </div>
+    <% end %>
 
 <!-- ########################## USER NOT SIGNED IN  ######################### -->
   <% else %>
