@@ -1,5 +1,7 @@
 table of content
 =======
+
+[![Join the chat at https://gitter.im/sosed_si_app/Lobby](https://badges.gitter.im/sosed_si_app/Lobby.svg)](https://gitter.im/sosed_si_app/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 * [introduction](#leadshareapp)
 * [usage](#usage)
 * [api](#api)
