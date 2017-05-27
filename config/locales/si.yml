@@ -235,18 +235,18 @@ si:
 # ############################################################################################
 
   staticpages-info:
-    thanks: "Hvala, da uporabljate Sosed.biz aplikacijo"
+    thanks: "Hvala, da uporabljate Sosed aplikacijo"
     email: "E-naslov"
     email_text: "info@sosed.si"
 
   #COMPANY INFO
     company_info: "Podatki o podjetju"
     company: "Podjetje"
-    mojsosed: "www.sosed.si"
+    mojsosed: "Sosedapp"
     address: "Naslov"
-    sosed_address: "Radehova 39"
+    sosed_address: "http://sosedapp.herokuapp.com/"
     city: "Kraj"
-    sosed_city: "2230 Lenart"
+    sosed_city: "Slovenija"
 
   #PAYMENT
     payment_purpose: "Namen plačila"
@@ -271,7 +271,7 @@ si:
     faq-a4: "Vsak kontakt lahko zakupi največ 5 različnih izvajalcev. Stranke namreč vedno primerjajo ponudbe različnih izvajalcev, zato jih pri nas povežemo z do 5 izvajalci ter tako povečamo možnost, da stranka ne išče drugje, ampak izbere enega izmed naših izvajalcev."
 
     faq-q5: "Ali nudite garancijo za vaše kontakte?"
-    faq-a5: "Da. V podjetju Moj sosed nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
+    faq-a5: "Da. Vedno nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
 
     faq-q6: "Zakaj je naročilo konkretnih povpraševanj boljše kot oglas na katerem od spletnih portalov, v časopisu ali na radiju?"
     faq-a6: "Oglas ali predstavitev na spletnem portalu vam ne zagotavlja povpraševanja, Sosed kontakti pa so konkretna povpraševanja strank, ki zdaj iščejo izvajalca vaših storitev. Takšen način pridobivanja novih strank je veliko bolj učinkovit, enostavno pa je tudi izmeriti rezultate."
@@ -292,15 +292,15 @@ si:
     offer_purpose: "Referenca"
     offer_purpose_text: "SI05 19-1235-84503"
     offer_account: "Številka TRR"
-    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_mojsosed_account: "Paypal"
     offer_company: "Podjetje"
-    offer_company_mojsosed: "www.sosed.si" 
+    offer_company_mojsosed: "Sosedapp"
     offer_tax_id: "Davčna številka"
-    offer_tax_id_mojsosed: "49595105"
+    offer_tax_id_mojsosed: ""
     offer_address: "Naslov"
-    offer_mojsosed_address: "Radehova 39"
+    offer_mojsosed_address: "http://sosedapp.herokuapp.com/"
     offer_city: "Kraj"
-    offer_mojsosed_city: "2230 Lenart"
+    offer_mojsosed_city: "Slovenija"
     offer_instructions: "Po prejemu plačila bomo znesek dodali v vašo Denarnico in lahko boste kupili željen kontakt. Če želite kupiti več kontaktov, si poglejte ponudbo za mesečno naročnino."
     lead:
       location: "Regija"
@@ -329,15 +329,15 @@ si:
     offer_purpose: "Referenca"
     offer_purpose_text: "SI05 19-1235-84503"
     offer_account: "Številka računa"
-    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_mojsosed_account: "Paypal"
     offer_company: "Podjetje"
-    offer_company_mojsosed: "Moj "
+    offer_company_mojsosed: "Sosedapp"
     offer_tax_id: "Davčna številka"
-    offer_tax_id_mojsosed: "49595105"
+    offer_tax_id_mojsosed: ""
     offer_address: "Naslov"
-    offer_mojsosed_address: "Radehova 39"
+    offer_mojsosed_address: "http://sosedapp.herokuapp.com/"
     offer_city: "Kraj"
-    offer_mojsosed_city: "2230 Lenart"
+    offer_mojsosed_city: "Slovenija"
     offer_instructions: "Takoj po prejemu plačila bomo napolnili vašo denarnico. Stanje lahko vedno preverite na Profilu. Za morebitna dodatna vprašanja smo vam vedno na voljo na info@sosed.si"
 
 # ############################################################################################

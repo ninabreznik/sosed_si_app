@@ -2,16 +2,16 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.mandrillapp.com',
-    port:                 587,
-    #domain:               'gmail.com',
-    user_name:            'ninabreznik@gmail.com',
-    password:             'GnUQAUKHxIO7YpSGcY2Lzg',
+    address:              ENV['MAILGUN_SMTP_SERVER'], # $ heroku config:set MAILGUN_SMTP_SERVER=smtp.mailgun.org --app sosedapp
+    port:                 ENV['MAILGUN_SMTP_PORT'], #587,
+    domain:               ENV['MAILGUN_DOMAIN'], #'morning-spire-7243.herokuapp.com',
+    user_name:            ENV['MAILGUN_SMTP_LOGIN'],
+    password:             ENV['MAILGUN_SMTP_PASSWORD'], #ENV['password'],
     authentication:       'plain',
     enable_starttls_auto: true  }
-    
+
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { :host => 'http://leadshareapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://sosedapp.herokuapp.com/' }
   # Code is not reloaded between requests.
   config.cache_classes = true
 

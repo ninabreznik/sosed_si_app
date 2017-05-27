@@ -1,16 +1,30 @@
-Dobrodošli na LeadShareApp
+Dobrodošli na Sosedapp
 ===============================================
 
+<<<<<<< Updated upstream
 Dobrodošli na LeadShareApp,
 
 Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.
 Prosimo vas, da samo še potrdite <%= link_to "Dogovor o sodelovanju", terms_of_use_url %>.
       
+=======
+Dobrodošli na Sosedapp,
+
+Uspešno ste se registrirali z uporabniškim imenom: <%= @user.email %>.
+Če ste serviser, prosimo, da si preberete še <%= link_to "Dogovor o sodelovanju za serviserje", terms_of_use_url %>.
+
+Če ste afiliator, pa kliknite na <%= link_to "Dogovor o sodelovanju za afiliatorje", affiliation_agreement_url %>.
+
+>>>>>>> Stashed changes
 Hvala, da ste se nam pridružili. Za kakršnakoli vprašanja sem vam vedno na voljo!
 
 Lep dan še naprej.
 
 Nina Breznik,
+<<<<<<< Updated upstream
 Moj Sosed
+=======
+Sosedapp
+>>>>>>> Stashed changes
 <%= root_url %>
 <%= mail_to "nina.breznik@sosed.si", "e: nina.breznik@sosed.si" %>

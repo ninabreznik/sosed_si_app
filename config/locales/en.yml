@@ -251,17 +251,17 @@ en:
   #COMPANY INFO
     company_info: "Company info"
     company: "Company"
-    mojsosed: "www.sosed.si"
+    mojsosed: "Sosedapp"
     address: "Address"
-    sosed_address: "Radehova 39"
+    sosed_address: "http://sosedapp.herokuapp.com/"
     city: "City"
-    sosed_city: "2230 Lenart"
+    sosed_city: "Slovenija"
 
   #PAYMENT
     payment_purpose: "Payment purpose"
     payment_purpose_text: "Lead payment"
     account: "Account number"
-    sosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    sosed_account: "Paypal"
     price: "Price"
     price_amount: "10 €"
 
@@ -282,7 +282,7 @@ en:
 
 
     faq-q5: "Ali nudite garancijo za vaše kontakte?"
-    faq-a5: "Da. V podjetju Moj sosed nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
+    faq-a5: "Da. Vedno nudimo garancijo, zato lahko v primeru, da je stranka že našla izvajalca ali če s stranko ne morete vzpostaviti kontakta, kontakt storniramo in vam damo možnost, da izberete nov kontakt po vaši izbiri."
 
     faq-q6: "Zakaj je naročilo konkretnih povpraševanj boljše kot oglas na katerem od spletnih portalov, v časopisu ali na radiju?"
     faq-a6: "Oglas ali predstavitev na spletnem portalu vam ne zagotavlja povpraševanja, Sosed kontakti pa so konkretna povpraševanja strank, ki zdaj iščejo izvajalca vaših storitev. Takšen način pridobivanja novih strank je veliko bolj učinkovit, enostavno pa je tudi izmeriti rezultate."
@@ -303,15 +303,15 @@ en:
     offer_purpose: "Payment purpose"
     offer_purpose_text: "Lead payment"
     offer_account: "Account number"
-    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_mojsosed_account: "Paypal"
     offer_company: "Company"
-    offer_company_mojsosed: "www.sosed.si"
+    offer_company_mojsosed: "Sosedapp"
     offer_tax_id: "TAX ID"
-    offer_tax_id_mojsosed: "49595105"
+    offer_tax_id_mojsosed: ""
     offer_address: "Address"
     offer_mojsosed_address: "Radehova 39"
     offer_city: "City"
-    offer_mojsosed_city: "2230 Lenart"
+    offer_mojsosed_city: "Slovenija"
     offer_instructions: "After your payment is processed, lead will be activated and you will be able to find it in the Address book (with other bought leads)."
     lead:
       location: "Region"
@@ -340,15 +340,15 @@ en:
     offer_purpose: "Payment purpose"
     offer_purpose_text: "Lead payment"
     offer_account: "Account number"
-    offer_mojsosed_account: "IBAN SI56 0410 2000 2065 311 (NOVA KBM d.d.)"
+    offer_mojsosed_account: "Paypal"
     offer_company: "Company"
-    offer_company_mojsosed: "www.sosed.si"
+    offer_company_mojsosed: "Sosedapp"
     offer_tax_id: "TAX ID"
-    offer_tax_id_mojsosed: "49595105"
+    offer_tax_id_mojsosed: ""
     offer_address: "Address"
-    offer_mojsosed_address: "Radehova 39"
+    offer_mojsosed_address: "http://sosedapp.herokuapp.com/"
     offer_city: "City"
-    offer_mojsosed_city: "2230 Lenart"
+    offer_mojsosed_city: "Slovenija"
     offer_instructions: "After your payment is processed, we will add money to your wallet. You can check your status under Profile. For more information don't hesitate to contact us on info@sosed.si"
 
 
