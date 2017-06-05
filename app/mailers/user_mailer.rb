@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "info@sosed.si"
+  default from: "noreply@sosedapp.sosed.si"
 
   def welcome_email(user, pass=nil)
     @user = user
