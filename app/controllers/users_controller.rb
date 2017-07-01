@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     @user = current_user
     @user.accepted_terms_of_use = accepted_terms_of_use
     @user.save
-    UserMailer.terms_of_use(@user).deliver 
+    #UserMailer.terms_of_use(@user).deliver
     redirect_to profile_path
   end
 
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
     @user = current_user
     @user.affiliation_agreement = affiliation_agreement
     @user.save
-    UserMailer.affiliation_agreement(@user).deliver 
+    UserMailer.affiliation_agreement(@user).deliver
     redirect_to profile_path
   end
 

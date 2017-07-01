@@ -7,13 +7,13 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :orders, foreign_key: "selector_id"
-  has_many :selected_leads, through: :orders, source: :selected 
+  has_many :selected_leads, through: :orders, source: :selected
 
   has_many :leads
 
   after_create :send_admin_mail
   def send_admin_mail
-    UserMailer.welcome_email(self).deliver
+    #UserMailer.welcome_email(self).deliver
   end
 
    # #############################################################################
